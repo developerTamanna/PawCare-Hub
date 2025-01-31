@@ -24,7 +24,9 @@
         font-family: "Sora", serif;
         
       }
-      
+      body {
+        overflow-x: hidden;
+    }
 </style>
 <script>
     tailwind.config = {
@@ -65,16 +67,14 @@
                     </div>
                     <ul
                       tabindex="0"
-                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[20] mt-3 w-52 p-2 shadow space-y-4">
+                      <li><a >Find a pet</a></li>
                       <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
+                          <a>Breeds</a>
                       </li>
-                      <li><a>Item 3</a></li>
+                      <li><a>Contact us</a></li>
+                      <button class="btn border border-orange-400">login</button>
+                      <button class="btn bg-paw-primary ">Register</button>
                     </ul>
                   </div>
                   <!-- logo -->
@@ -90,9 +90,10 @@
                         <a>Breeds</a>
                     </li>
                     <li><a>Contact us</a></li>
+                   
                   </ul>
                 </div>
-                <div class="navbar-end flex md:gap-4">
+                <div class="navbar-end flex md:gap-4 ">
                     <button class="btn btn-ghost btn-circle">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -124,8 +125,8 @@
                         <span class="badge badge-xs badge-primary indicator-item"></span>
                       </div>
                     </button>
-                    <button class="btn border border-orange-400">login</button>
-                    <button class="btn bg-paw-primary">Register</button>
+                    <button class="btn border hidden lg:flex border-orange-400">login</button>
+                    <button class="btn bg-paw-primary hidden lg:flex">Register</button>
               
                   </div>
               </div>
@@ -133,7 +134,7 @@
 
          <!--start banner section -->
          <section class="md:container max-auto my-20">
-            <div class="flex flex-col md:flex-row md:py-6 md:px-20 ">
+            <div class="flex flex-col md:flex-row md:py-6 md:px-20">
                 <!-- left-site -->
                  <div class="relative z-10 mt-8 md:mt-0 md:w-1/2">
                   <h2 class=" px-2 md:px-0  adlam text-3xl font-normal ">Pamper Your Pet,<br> Because They Deserve the Bes</h2>
@@ -141,8 +142,8 @@
                   <button class=" mt-6 btn bg-paw-primary">Find a pet</button>
                  </div>
                  <!-- right site -->
-                 <div class=" relative md:absolute w-[90%] md:w-11/12 md:top-1">
-                   <img class=" md:w-full h-auto object-cover" src="./c1-assets/cat-big-removebg-preview.png" alt="">
+                 <div class=" relative md:absolute w-[90%] md:w-11/12 md:top-1 md:mt-40">
+                   <img class=" md:w-[90%] h-auto object-cover" src="./c1-assets/cat-big-removebg-preview.png" alt="">
                  </div>
             </div>
          </section>
